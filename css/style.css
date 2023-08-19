@@ -294,3 +294,19 @@ form button{
     padding: 1rem;
     border: 1px solid #e1e1e1;
 }
+
+
+.site-footer{
+    background-color: #303030;
+    color: white;
+}
+.site-footer p {
+    border-top: 0.1px solid #e1e1e123;
+    padding-top: 1rem;
+}
+.grid-nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
