@@ -1,0 +1,295 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2rem;
+}
+p{
+    font-size: 1.8rem;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+
+ul {
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.contenedor {
+    width: 2000px;
+    margin: 0 auto;
+}
+.contenedor-navegacion{
+    padding: 1.8rem;
+}
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-principal ul  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.nav-principal a{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.3rem;
+}
+
+.btn {
+    padding: 2rem 10rem;
+    border: none;
+    cursor: pointer;
+}
+
+.primary{
+    border: 1px solid red;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: inherit;
+}
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+ }
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/buffet-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.hero-image::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 100%;
+    height: 100%;
+}
+
+.soluciones{
+    width: 100%;
+    height: 50rem;
+    background-image: url('../images/food-table.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 10rem 0 0 0;
+}
+.soluciones::after{
+    content: '';
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.soluciones-texto{
+    background-color: inherit;
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding: 10rem;
+    line-height: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.hero .texto-imagen{
+    position: absolute;
+    color: rgb(255, 255, 0);
+    font-size: 9rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 12rem;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+}
+
+.nosotros-somos{
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.contenedor-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+.texto-info{
+    padding: 1.5rem 0;
+    text-align: left;
+}
+.texto-info p {
+    padding: 2.5rem 0;
+    font-size: 2.5rem;
+}
+.contenedor-nosotros img{
+    width: 100%;
+}
+.contenido-principal{
+    padding: 10rem 0;
+}
+
+.listado-servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+}
+
+.servicio {
+    border: 2px solid #757575;
+}
+.servicio h3{
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.4rem;
+    padding: 2rem;
+}
+.line {
+    margin: 3rem auto 5rem auto;
+    width: 100px;
+    height: 2px;
+    background-color: rgb(199, 10, 10);
+}
+.contenedor-servicios{
+    margin-bottom: 15rem;
+}
+.contenedor-paquetes{
+    margin-bottom: 10rem;
+}
+
+.contenedor-paquetes p {
+    margin-bottom: 5rem;
+}
+.listado-paquetes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 8rem;
+}
+
+
+.paquete{
+    border: 1px solid #9c9c9c;
+}
+.paquete h3{
+    padding: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+.info-paquete h4 {
+    background-color: #f0f0f0;
+    padding: 5rem;
+    font-size: 2.6rem;
+}
+
+.info-paquete ul li {
+    padding: 3rem 0;
+    border: 1px solid #f0f0f0;
+}
+
+
+.contenedor-contacto{
+    padding-bottom: 10rem;
+}
+.info-contacto{
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formulario-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+form button{
+    background-color: rgb(63, 170, 60);
+    color: white;
+    border-radius: 10%;
+    display: inline-block;
+    padding: 1rem 5rem;
+    border: none;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+.campo label{
+    display: block;
+    padding: 1rem  0;
+}
+
+
+.campo:nth-child(4) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+ input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    width: 100%;
+}
+
+.campo input:not([type="radio"]), textarea, .campo select {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
+}
